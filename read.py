@@ -12,3 +12,9 @@ intlength = 0
 for review in data:
 	intlength += len(review)
 print("Average length of reviews is ",  intlength / len(data))
+
+listnew = []
+for review in data:
+	if len(review) < 100:
+		listnew.append(review)
+print("count of reviews that less than", len(listnew)) 
