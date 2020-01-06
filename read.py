@@ -6,8 +6,9 @@ with open('reviews.txt','r') as f:
 		count += 1
 		if count % 1000 == 0:
 			print(len(data))
-print(len(data))
+print("Total ", len(data), " line record")
 
-print(data[0])
-print('-----------------------------')
-print(data[1])
+intlength = 0
+for review in data:
+	intlength += len(review)
+print("Average length of reviews is ",  intlength / len(data))
