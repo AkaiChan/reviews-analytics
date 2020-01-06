@@ -17,10 +17,13 @@ listnew = []
 for review in data:
 	if len(review) < 100:
 		listnew.append(review)
-print("count of reviews that less than", len(listnew)) 
+print("count of reviews that less than 100 ", len(listnew)) 
 
 listnew = []
 for review in data:
 	if "good" in review:
 		listnew.append(review)
 print("count of reviews that include 'good'", len(listnew)) 
+
+good = [d for d in data if 'good' in d]
+print("count of reviews that include 'good'", len(good)) 
